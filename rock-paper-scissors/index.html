@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rock paper scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <div class="card">
+
+    <!-- player data card  -->
+    <div class="showplayerscr">
+      <abbr title="You"><img class="imgicons" src="imgs/bussiness-man.png" alt=""></abbr>
+      <abbr title="Computer">
+        <img class="imgicons" src="imgs/businessman.png" alt="">
+
+      </abbr>
+        
+      <div class="result" id="youDisplay">🫱🏻‍🫲🏼</div>
+      <div class="result" id="compDisplay">🫱🏻‍🫲🏼</div>
+    </div>
+    <!-- displays result of game -->
+    <div id="display">NA</div>
+
+    <!-- control buttons -->
+    <div id="container">
+      <button onclick="playGame('rock')" class="btn" id="rock">👊🏻</button>
+      <button onclick="playGame('paper')" class="btn" id="paper">🖐🏻</button>
+      <button onclick="playGame('scissors')" class="btn" id="scissors">
+        ✌🏻
+      </button>
+    </div>
+    <!-- score board -->
+    <div id="scoreHeading">Score-Card</div>
+    <div class="scoreCard">
+      <img class="imgicons" src="imgs/cool.png" alt="">
+      <div id="player">0</div>
+      <div id="divider">-</div>
+      <div id="draw">0</div>
+      <div id="divider">-</div>
+      <div id="computer">0</div>
+      <img class="imgicons" src="imgs/robot.png" alt="">
+
+      <!-- reset button for score -->
+    </div>
+    <button id="btn1">Reset Secore</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
